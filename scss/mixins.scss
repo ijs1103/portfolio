@@ -1,0 +1,8 @@
+// Mixins
+@mixin btn-base {
+  color: #fff;
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 2px 8px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* nav 숨고 햄버거 메뉴 나옴 */
+@media (max-width: 1020px) {
+  .menu {
+    display: none;
+  }
+  .mobileMenu {
+    display: block;
+  }
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+  }
+  /* Section : more */
+  section.more {
+    justify-content: start;
+    overflow-x: scroll;
+  }
+  .more-text {
+    margin: 0 auto;
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  /* Common CSS */
+  section.welcome {
+    padding: 0 20px;
+  }
+  .inner {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .inner .desc {
+    width: 100%;
+    height: 50%;
+    padding: 30px;
+  }
+  .inner .photos {
+    margin-top: 60px;
+    padding: 20px;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+  }
+  section.feature {
+    padding: 25px 0;
+  }
+  .desc {
+    padding: 0;
+  }
+  .desc h1 {
+    line-height: 1.5em;
+    font-size: 28px;
+  }
+  section.smart .inner,
+  section.inner {
+    display: flex;
+    flex-direction: column;
+  }
+  section.smart .inner .desc,
+  section.inner .desc {
+    order: 1;
+  }
+  section.smart .inner .photos,
+  section.inner .photos {
+    order: 2;
+  }
+  /* Section : Welcome */
+  .heading h1 {
+    font-size: 26px;
+  }
+  .next-section {
+    transform: translateX(-50%) scale(0.8);
+    bottom: 25px;
+  }
+  /* Header */
+  .heading {
+    width: 90%;
+  }
+  header {
+    padding: 0 10px;
+  }
+  header .btn-download {
+    width: 150px;
+  }
+  .mobileMenu {
+    display: block;
+  }
+  /* Section : CallAction */
+  .download-inner {
+    width: 90%;
+  }
+  section.download h1 {
+    font-size: 23px;
+  }
+  /* Section : more */
+  /* Footer */
+  .footer-inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .sns-outer {
+    border-bottom: none;
+  }
+  /* sitemap */
+  .sitemap {
+    padding: 0;
+  }
+  .link-item {
+    float: none;
+    width: 100%;
+  }
+  .link-item-title {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    pointer-events: all;
+  }
+  .link-item-title:before {
+    content: '\e942';
+    font-family: xeicon;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    transition: 0.35s;
+  }
+  .link-item-title.active:before {
+    transform: rotate(180deg);
+  }
+  .link-item:first-child .link-item-title {
+    border-top: 1px solid #ddd;
+  }
+  .link-item:last-child .link-item-title {
+    border-bottom: none;
+  }
+  .link-item-content {
+    display: none;
+    line-height: 3em;
+  }
+  .logo-footer,
+  .policy,
+  .language {
+    float: none;
+    text-align: center;
+  }
+  .policy {
+    margin-bottom: 20px;
+  }
+  .policy a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .desc h1 {
+    font-size: 24px;
+  }
+  .more-text h1 {
+    font-size: 24px;
+  }
+}
