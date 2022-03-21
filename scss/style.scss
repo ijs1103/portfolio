@@ -42,28 +42,28 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  .headline-share {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-    h1 {
-      font-family: map-get($font-family, eng);
-      font-size: map-get($font-size, large-heading);
-      text-transform: uppercase;
-      color: transparent;
-      display: flex;
-      span{
-        color: #fff;
-        filter: blur(1px) hue-rotate(0deg);
-        text-shadow: 0 0 10px #ff1e00, 0 0 20px #ff1e00, 0 0 40px #ff1e00, 0 0 80px #ff1e00, 0 0 120px #ff1e00,
-        0 0 200px #ff1e00, 0 0 300px #ff1e00, 0 0 400px #ff1e00;
-      }
-    }
-  }
+  // .headline-share {
+  //   display: flex;
+  //   justify-content: center;
+  //   margin-bottom: 40px;
+  //   h1 {
+  //     font-family: map-get($font-family, eng);
+  //     font-size: map-get($font-size, large-heading);
+  //     text-transform: uppercase;
+  //     color: transparent;
+  //     display: flex;
+  //     span{
+  //       color: #fff;
+  //       filter: blur(1px) hue-rotate(0deg);
+  //       text-shadow: 0 0 10px #ff1e00, 0 0 20px #ff1e00, 0 0 40px #ff1e00, 0 0 80px #ff1e00, 0 0 120px #ff1e00,
+  //       0 0 200px #ff1e00, 0 0 300px #ff1e00, 0 0 400px #ff1e00;
+  //     }
+  //   }
+  // }
   .items {
     width: 1280px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     .item {
       &.thum {
