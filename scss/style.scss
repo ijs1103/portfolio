@@ -1,7 +1,7 @@
 /* Google Web Font */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
 
 @import "reset";
 @import "mixins";
@@ -17,20 +17,23 @@ body {
   margin: 0;
   background-color: map-get($bg-color, primary);
 }
-@keyframes animate{
-  0%{
+@keyframes animate {
+  0% {
     color: #fff;
     filter: blur(2px) hue-rotate(0deg);
-    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff,
-    0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+      0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff,
+      0 0 400px #00b3ff;
   }
-  30%, 70%{
+  30%,
+  70% {
     color: #fff;
     filter: blur(2px) hue-rotate(360deg);
-    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff,
-    0 0 200px hsl(198, 100%, 50%), 0 0 300px #00b3ff, 0 0 400px #00b3ff;
+    text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+      0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px hsl(198, 100%, 50%),
+      0 0 300px #00b3ff, 0 0 400px #00b3ff;
   }
-  100%{
+  100% {
     color: transparent;
     box-shadow: none;
     filter: blur(2px) hue-rotate(0deg);
@@ -78,16 +81,16 @@ body {
           &.pc {
             background-color: crimson;
           }
-
           &.mobile {
             background-color: royalblue;
           }
         }
-        
       }
     }
+
     aside.item {
-      b, h2 {
+      b,
+      h2 {
         font-family: map-get($font-family, eng);
       }
       b {
@@ -167,5 +170,5 @@ body {
   font-size: 2em;
   color: #fff;
   border-radius: 50%;
-  background-color: #E50815;
+  background-color: #e50815;
 }
